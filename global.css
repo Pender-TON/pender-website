@@ -1,0 +1,78 @@
+body {
+  	margin: 0;
+  	line-height: normal;
+  	-webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Galano Grotesque Bold';
+  src: url('fonts/GalanoGrotesqueBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Galano Grotesque SemiBold';
+  src: url('fonts/GalanoGrotesqueSemiBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Galano Grotesque SemiBoldItalic';
+  src: url('fonts/GalanoGrotesqueSemiBoldItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Galano Grotesque Heavy';
+  src: url('fonts/GalanoGrotesqueHeavy.otf') format('opentype');
+}
+
+:root {
+  	
+  	/* fonts */
+	--font-gg-bold: 'Galano Grotesque Bold', sans-serif;
+	--font-gg-semibold: 'Galano Grotesque SemiBold', sans-serif;
+	--font-gg-semibolditalic: 'Galano Grotesque SemiBoldItalic', sans-serif;
+	--font-gg-heavy: 'Galano Grotesque Heavy', sans-serif;
+  	
+  	/* font sizes */
+  	--font-size-xl: 116px;
+  	--font-size-l: 80px;
+  	--font-size-xm: 48px;
+  	--font-size-m: 32px;
+  	--font-size-s: 20px;
+  	--font-size-xs: 14px;
+  	
+  	/* Colors */
+  	--white: rgba(255, 255, 255, 1);
+  	--white-15: rgba(38, 38, 38, 1);
+  	--white-t-15: rgba(255, 255, 255, 0.15);
+  	--black: rgba(0, 0, 0, 1);
+  	--pink: rgba(254, 91, 170, 1);
+  	--pink-pink-t-20: rgba(254, 91, 170, 0.2);
+  	--pink-gradient: linear-gradient(107.74deg, rgba(255, 139, 195, 1), rgba(253, 84, 166, 1));
+  	
+  	/* Gaps */
+  	--gap-xxl: 124px;
+  	--gap-xl: 64px;
+  	--gap-l: 48px;
+  	--gap-sm: 24px;
+  	--gap-s: 20px;
+  	--gap-xs: 12px;
+  	--gap-xxs: 8px;
+  	
+  	/* Paddings */
+  	--padding-xxxl: 164px;
+  	--padding-xxl: 96px;
+  	--padding-xml: 80px;
+  	--padding-xl: 48px;
+  	--padding-l: 40px;
+  	--padding-m: 36px;
+  	--padding-s: 24px;
+  	--padding-xs: 16px;
+  	--padding-xxs: 12px;
+  	--padding-xxxs: 8px;
+  	
+  	/* Border radiuses */
+  	--br-xl: 80px;
+  	--br-l: 48px;
+  	--br-s: 20px;
+
+}
