@@ -34,11 +34,14 @@ body {
   	
   	/* font sizes */
   	--font-size-xl: 116px;
+  	--font-size-xl-m: 36px;
   	--font-size-l: 80px;
+  	--font-size-l-m: 56px;
   	--font-size-xm: 48px;
   	--font-size-m: 32px;
   	--font-size-s: 20px;
   	--font-size-xs: 14px;
+  	--font-size-xxs: 10px;
   	
   	/* Colors */
   	--white: rgba(255, 255, 255, 1);
@@ -47,6 +50,7 @@ body {
   	--black: rgba(0, 0, 0, 1);
   	--pink: rgba(254, 91, 170, 1);
   	--pink-pink-t-20: rgba(254, 91, 170, 0.2);
+  	--pink-pink-t-30: rgba(254, 91, 170, 0.3);
   	--pink-gradient: linear-gradient(107.74deg, rgba(255, 139, 195, 1), rgba(253, 84, 166, 1));
   	
   	/* Gaps */
@@ -66,6 +70,7 @@ body {
   	--padding-l: 40px;
   	--padding-m: 36px;
   	--padding-s: 24px;
+  	--padding-s-m: 20px;
   	--padding-xs: 16px;
   	--padding-xxs: 12px;
   	--padding-xxxs: 8px;
