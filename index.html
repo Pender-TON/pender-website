@@ -344,5 +344,12 @@
 	</script>
 	<script type="text/javascript" src="js/timer.js"></script>
 	<script type="text/javascript" src="js/ticker.js"></script>
+	 <script type="module">
+        import { inject } from "@vercel/analytics";
+    </script>
+    <script type="module">
+	    import { injectSpeedInsights } from '@vercel/speed-insights';
+	    injectSpeedInsights();
+	</script>
 </body>
 </html>
