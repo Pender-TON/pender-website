@@ -36,7 +36,8 @@
 
 
 
-function updateSupplyBar(percent) {
+
+    function updateSupplyBar(percent) {
         const spanElement = document.querySelector('.supply-bar-line-text');
         const barInsideElement = document.querySelector('.supply-bar-line-inside');
         const barLineElement = document.querySelector('.supply-bar-line');
@@ -58,7 +59,7 @@ function updateSupplyBar(percent) {
             }
         }, 40); // 20 миллисекунд для каждого шага инкремента
 
-        // Управление классами
+        // Управление классами после завершения анимации
         setTimeout(() => {
             if (percent > 17) {
                 spanElement.classList.remove('sblt-start');
@@ -75,12 +76,26 @@ function updateSupplyBar(percent) {
                 barInsideElement.classList.remove('sbli-finish');
                 barLineElement.classList.remove('sbl-finish');
             }
-        }, 2000); // Задержка совпадает с продолжительностью анимации width
+        }, 2000); // Совпадает с продолжительностью анимации width
     }
 
-    // Начальное значение для анимации
-    var percent = 10; // Установите значение по желанию
-    updateSupplyBar(percent);
+    // Intersection Observer setup
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const percent = 10; // Установка начального значения percent
+                updateSupplyBar(percent); // Запуск анимации
+                observer.unobserve(entry.target); // Перестать наблюдать после запуска
+            }
+        });
+    }, {
+        threshold: 0.8 // Элемент должен быть виден на 50% перед началом анимации
+    });
+
+    // Наблюдаем за элементом supply-container
+    const supplyContainer = document.querySelector('.supply-container');
+    observer.observe(supplyContainer);
+
 
 
 
