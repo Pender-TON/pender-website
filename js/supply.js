@@ -78,13 +78,19 @@
             }
         }, 2000); // Совпадает с продолжительностью анимации width
     }
-
+    async function fetchPercent() {
+        const response = await fetch('https://tonapi.io/v2/accounts/UQAJh1gh-nISo1dpFb7tPS-E7M1GwfBoBjakBgRGyUN1FyMy');
+        const data = await response.json();
+        return Math.ceil(data['balance']/500000000000);
+    }
     // Intersection Observer setup
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const percent = 10; // Установка начального значения percent
-                updateSupplyBar(percent); // Запуск анимации
+                setInterval(async () => {
+                    const percent = await fetchPercent();
+                    updateSupplyBar(percent); // Запуск анимации
+                }, 10000); //check balance every 10 sec
                 observer.unobserve(entry.target); // Перестать наблюдать после запуска
             }
         });
