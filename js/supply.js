@@ -37,7 +37,7 @@
 
 
 
-    function updateSupplyBar(percent) {
+    function updateSupplyBar(percent, currentPercent) {
         const spanElement = document.querySelector('.supply-bar-line-text');
         const barInsideElement = document.querySelector('.supply-bar-line-inside');
         const barLineElement = document.querySelector('.supply-bar-line');
@@ -48,7 +48,6 @@
         }
 
         // Плавное изменение числа в span
-        let currentPercent = 0;
         const interval = setInterval(() => {
             if (currentPercent <= percent) {
                 spanElement.textContent = currentPercent + '%';
@@ -76,8 +75,11 @@
                 barInsideElement.classList.remove('sbli-finish');
                 barLineElement.classList.remove('sbl-finish');
             }
-        }, 2000); // Совпадает с продолжительностью анимации width
+        }, percent * 40); // Совпадает с продолжительностью анимации width
     }
+
+    let currentPercent = 0;
+
     async function fetchPercent() {
         const response = await fetch('https://tonapi.io/v2/accounts/UQAJh1gh-nISo1dpFb7tPS-E7M1GwfBoBjakBgRGyUN1FyMy');
         const data = await response.json();
@@ -89,7 +91,10 @@
             if (entry.isIntersecting) {
                 setInterval(async () => {
                     const percent = await fetchPercent();
-                    updateSupplyBar(percent); // Запуск анимации
+                    if (percent > currentPercent) {
+                        updateSupplyBar(percent); // Запуск анимации
+                        currentPercent = percent;
+                    }
                 }, 10000); //check balance every 10 sec
                 observer.unobserve(entry.target); // Перестать наблюдать после запуска
             }
