@@ -1,0 +1,10 @@
+{
+    "redirects": [
+        {
+            "source": "https://thepender.com/(.*)",
+            "destination": "https://www.thepender.com/$1",
+            "permanent": true,
+            "statusCode": 301
+        }
+    ]
+}
