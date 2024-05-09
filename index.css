@@ -214,7 +214,8 @@
     background-color: var(--pink-pink-t-20);
     font-family: var(--font-gg-bold);
     padding: 13px var(--padding-xs) 11px;
-    transition: width .3s
+    transition: width .3s;
+    filter: blur(3px)
 }
 
 .ass-wallet-link:hover .ass-wallet-text {
