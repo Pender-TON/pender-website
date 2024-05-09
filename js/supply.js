@@ -87,12 +87,18 @@
     }
     // Intersection Observer setup
     const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
+        entries.forEach(async entry => {
             if (entry.isIntersecting) {
+                let percent = await fetchPercent();
+                if (percent > currentPercent) {
+                    updateSupplyBar(percent, currentPercent); // Запуск анимации
+                    currentPercent = percent;
+                }
+
                 setInterval(async () => {
-                    const percent = await fetchPercent();
+                    percent = await fetchPercent();
                     if (percent > currentPercent) {
-                        updateSupplyBar(percent, currentPercent); // Запуск анимации
+                        updateSupplyBar(percent, currentPercent);
                         currentPercent = percent;
                     }
                 }, 10000); //check balance every 10 sec
