@@ -92,7 +92,7 @@
                 setInterval(async () => {
                     const percent = await fetchPercent();
                     if (percent > currentPercent) {
-                        updateSupplyBar(percent); // Запуск анимации
+                        updateSupplyBar(percent, currentPercent); // Запуск анимации
                         currentPercent = percent;
                     }
                 }, 10000); //check balance every 10 sec
