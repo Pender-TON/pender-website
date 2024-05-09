@@ -8,9 +8,9 @@ function updateTimer() {
         const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-        document.querySelectorAll('.ass-timer-digit').forEach(function(element) {
+        document.querySelectorAll('.ass-timer-digit').forEach(function (element) {
             const timerType = element.dataset.timerType;
-            switch(timerType) {
+            switch (timerType) {
                 case 'days':
                     element.textContent = padZero(days);
                     break;
@@ -27,7 +27,7 @@ function updateTimer() {
         });
     } else {
         clearInterval(timerInterval);
-        document.querySelectorAll('.ass-timer-digit').forEach(function(element) {
+        document.querySelectorAll('.ass-timer-digit').forEach(function (element) {
             element.textContent = '00';
         });
     }

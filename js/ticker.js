@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const tickers = document.querySelectorAll('.ticker-list');
 
     tickers.forEach(tickerList => {
