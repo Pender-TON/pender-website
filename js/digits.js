@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function animateValue(obj, start, end, duration, type) {
         let current = start;
         const range = end - start;
-        const increment = end > start ? 1 : -1;
+        const increment = end > start ? 2 : -2;
         const stepTime = Math.abs(Math.floor(duration / range));
         const multiplier = type === 'supply' ? 1000000 : 1; // Ускоряем анимацию для 'supply'
         const timer = setInterval(() => {
