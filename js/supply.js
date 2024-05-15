@@ -83,7 +83,7 @@ let currentPercent = 0;
 async function fetchPercent() {
     const response = await fetch('https://tonapi.io/v2/accounts/UQAJh1gh-nISo1dpFb7tPS-E7M1GwfBoBjakBgRGyUN1FyMy');
     const data = await response.json();
-    return Math.ceil(data['balance'] / 500000000000);
+    return Math.ceil(data['balance'] / 300000000000);
 }
 // Intersection Observer setup
 const observer = new IntersectionObserver((entries, observer) => {
