@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -27,35 +26,26 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
 </head>
-
-<body>
-
+<body>	
 	<div class="fucker-block">
 		<div class="topper">
-			<a href="#buy-pendr" class="social-link-box"><img class="pender-black-logo" alt="logo-black"
-					src="images/logo-black.svg"></a>
+			<a href="#buy-pendr" class="social-link-box"><img class="pender-black-logo" alt="logo-black" src="images/logo-black.svg"></a>
 			<div class="social-links">
-				<a class="social-link-box"
-					href="https://getgems.io/collection/EQAYL-1DmrTbAqcawL8oyrZT_efr04CUajUc309hPx9dRQ5U#items"
-					target="_blank"><img class="social-icon" alt="gg" src="images/getgems.svg"></a>
-				<a class="social-link-box" href="https://t.me/pender_official" target="_blank"><img class="social-icon"
-						alt="tg" src="images/telegram.svg"></a>
-				<a class="social-link-box" href="https://twitter.com/pender_ton" target="_blank"><img
-						class="social-icon" alt="x" src="images/twitter.svg"></a>
+				<a class="social-link-box" href="https://getgems.io/collection/EQAYL-1DmrTbAqcawL8oyrZT_efr04CUajUc309hPx9dRQ5U#items" target="_blank"><img class="social-icon" alt="gg" src="images/getgems.svg"></a>
+				<a class="social-link-box" href="https://t.me/pender_official" target="_blank"><img class="social-icon" alt="tg" src="images/telegram.svg"></a>
+				<a class="social-link-box" href="https://twitter.com/pender_ton" target="_blank"><img class="social-icon" alt="x" src="images/twitter.svg"></a>
 			</div>
 		</div>
 		<div class="fucker-container">
-			<div><img class="fucker-image" alt="fucker-img" src="images/fucker-pender.svg"></div>
+			<div><canvas id="fucker-pender" class="fucker-image" width="848" height="1875"></canvas></div>
 			<div class="fucker-info">
 				<div class="fucker-title">
 					<span>$Pendr </span>
 					<span class="white-color">is the first coin on TON with built-in lottery</span>
 				</div>
-				<a class="button-link" href="#buy-pendr">
-					<div class="button">
-						<span class="button-text">Buy $PENDR</span>
-					</div>
-				</a>
+				<a class="button-link" href="#buy-pendr"><div class="button">
+					<span class="button-text">Buy $PENDR</span>
+				</div></a>
 			</div>
 		</div>
 	</div>
@@ -104,15 +94,11 @@
 				<span class="pink-color">lottery</span>
 			</div>
 			<div class="ass-description">
-				<div class="ass-text">Join presale for a chance to multiply your investments by 10x. Presale wallet:
-				</div>
-				<a id="walletLink" class="ass-wallet-link" href="#">
-					<div class="ass-wallet">
-						<div class="ass-wallet-text">UQAJh1gh-nISo1dpFb7tPS-E7M1GwfBoBjakBgRGyUN1FyMy</div>
-						<div class="ass-wallet-copy"><img class="copy-icon" alt="copy" src="images/copy.svg"><img
-								class="check-icon" alt="check" src="images/check.svg"></div>
-					</div>
-				</a>
+				<div class="ass-text">Join presale for a chance to multiply your investments by 10x. Presale wallet:</div>
+				<a id="walletLink" class="ass-wallet-link" href="#"><div class="ass-wallet">
+					<div class="ass-wallet-text">UQAJh1gh-nISo1dpFb7tPS-E7M1GwfBoBjakBgRGyUN1FyMy</div>
+					<div class="ass-wallet-copy"><img class="copy-icon" alt="copy" src="images/copy.svg"><img class="check-icon" alt="check" src="images/check.svg"></div>
+				</div></a>
 				<div class="supply-container">
 					<div class="supply-bar">
 						<div class="supply-bar-cell"></div>
@@ -149,30 +135,25 @@
 				<div class="ass-info-cell">
 					<div class="ass-info-title">Presale Timer</div>
 					<div class="ass-info-text">
-						<div class="ass-text">Presale timer will start when 10.000 TON Soft Cap is passed. <a
-								href="#how-presale-works" class="a-links">How does it work?</a></div>
+						<div class="ass-text">Presale timer will start when 10.000 TON Soft Cap is passed. <a href="#how-presale-works" class="a-links">How does it work?</a></div>
 					</div>
 				</div>
-			</div>
+			</div>	
 			<div class="ass-timer">
 				<div class="ass-timer-cell">
-					<div class="ass-timer-digit ass-timer-digit-left ass-timer-digit-disable"
-						data-timer-type="days_disable">06</div>
+					<div class="ass-timer-digit ass-timer-digit-left ass-timer-digit-disable" data-timer-type="days_disable">06</div>
 					<div class="ass-timer-name ass-timer-name-disable">days</div>
 				</div>
 				<div class="ass-timer-cell">
-					<div class="ass-timer-digit ass-timer-digit-center ass-timer-digit-disable"
-						data-timer-type="hours_disable">23</div>
+					<div class="ass-timer-digit ass-timer-digit-center ass-timer-digit-disable" data-timer-type="hours_disable">23</div>
 					<div class="ass-timer-name ass-timer-name-disable">hours</div>
 				</div>
 				<div class="ass-timer-cell">
-					<div class="ass-timer-digit ass-timer-digit-center ass-timer-digit-disable"
-						data-timer-type="minutes_disable">59</div>
+					<div class="ass-timer-digit ass-timer-digit-center ass-timer-digit-disable" data-timer-type="minutes_disable">59</div>
 					<div class="ass-timer-name ass-timer-name-disable">minutes</div>
 				</div>
 				<div class="ass-timer-cell">
-					<div class="ass-timer-digit ass-timer-digit-right ass-timer-digit-disable"
-						data-timer-type="seconds_disable">59</div>
+					<div class="ass-timer-digit ass-timer-digit-right ass-timer-digit-disable" data-timer-type="seconds_disable">59</div>
 					<div class="ass-timer-name ass-timer-name-disable">seconds</div>
 				</div>
 			</div>
@@ -181,8 +162,7 @@
 					<div class="ass-info-cell">
 						<div class="ass-info-title">How Presale works?</div>
 						<div class="ass-info-text">
-							<div class="ass-text">Presale - it's the initial sale of tokens or coins to a select group
-								of investors before the public offering.</div>
+							<div class="ass-text">Presale - it's the initial sale of tokens or coins to a select group of investors before the public offering.</div>
 							<div>
 								<div class="ass-text">Min. Invest per Account: 10 TON</div>
 								<div class="ass-text">Max. Invest per Account: 100 TON</div>
@@ -203,10 +183,7 @@
 								</div>
 								<div class="ass-info-text-mark">
 									<img class="mark-image" alt="mark" src="images/mark.svg">
-									<div class="ass-text">Transfer TON to your wallet (<a href="https://tonkeeper.com/"
-											class="a-links" target="_blank">Tonkeeper</a> & <a
-											href="https://wallet.tg/ton" class="a-links" target="_blank">TonSpace</a>).
-									</div>
+									<div class="ass-text">Transfer TON to your wallet (<a href="https://tonkeeper.com/" class="a-links" target="_blank">Tonkeeper</a> & <a href="https://wallet.tg/ton" class="a-links" target="_blank">TonSpace</a>).</div>
 								</div>
 								<div class="ass-info-text-mark">
 									<img class="mark-image" alt="mark" src="images/mark.svg">
@@ -221,26 +198,22 @@
 									<div class="ass-text">Win 10-100x from your investment.</div>
 								</div>
 							</div>
-							<div class="ass-text"><i>Remember that the maximum purchase per account is 100 TON.</i>
-							</div>
+							<div class="ass-text"><i>Remember that the maximum purchase per account is 100 TON.</i></div>
 						</div>
 					</div>
 					<div class="ass-info-cell">
 						<div class="ass-info-title">How Lottery works?</div>
 						<div class="ass-info-text">
-							<div class="ass-text">Participation in the lottery is open to every account that sends TON
-								from their wallet to the presale wallet.</div>
-							<div class="ass-text">There will be at least 1 winner in the lottery. The winner will
-								receive 10% of the total TON collected (taking into account the minimum collected amount
-								of TON - 10,000) - this will be 1000 TON.</div>
+							<div class="ass-text">Participation in the lottery is open to every account that sends TON from their wallet to the presale wallet.</div>
+							<div class="ass-text">There will be at least 1 winner in the lottery. The winner will receive 10% of the total TON collected (taking into account the minimum collected amount of TON - 10,000) - this will be 1000 TON.</div>
 							<div class="ass-text">The second winner will be chosen after the end of the PRESALE.</div>
-
+							
 						</div>
 					</div>
 				</div>
 				<div class="ass-images">
 					<img class="arrow-image" alt="arrow-img" src="images/arrow-two.svg">
-					<img class="ass-image" alt="ass-img" src="images/ass-pender.svg">
+					<canvas id="ass-pender" class="ass-image" width="920" height="1564">
 				</div>
 			</div>
 		</div>
@@ -264,15 +237,13 @@
 						<div class="ass-timer-name name-bg-white">Team vested</div>
 					</div>
 					<div class="ass-timer-cell">
-						<div class="ass-timer-digit ass-timer-digit-right digit-bg-white" ass-timer-type="presale">0%
-						</div>
+						<div class="ass-timer-digit ass-timer-digit-right digit-bg-white" ass-timer-type="presale">0%</div>
 						<div class="ass-timer-name name-bg-white">Presale</div>
 					</div>
 				</div>
 				<div class="ass-timer">
 					<div class="ass-timer-cell">
-						<div class="ass-timer-digit ass-timer-digit-left digit-bg-white" ass-timer-type="marketing">0%
-						</div>
+						<div class="ass-timer-digit ass-timer-digit-left digit-bg-white" ass-timer-type="marketing">0%</div>
 						<div class="ass-timer-name name-bg-white">Marketing</div>
 					</div>
 					<div class="ass-timer-cell">
@@ -284,7 +255,7 @@
 						<div class="ass-timer-name name-bg-white">Project dev</div>
 					</div>
 				</div>
-				<img class="money-image" alt="money-img" src="images/money-pender.svg">
+				<canvas id="money-pender" class="money-image" width="1280" height="1396">
 			</div>
 		</div>
 	</div>
@@ -335,9 +306,7 @@
 			<div>
 				<div class="rm-cell">
 					<div class="rm-mark rm-mark-gap-top">
-						<div class="rm-circle rm-circle-pink">
-							<div class="rm-center-circle rm-center-circle-black"></div>
-						</div>
+						<div class="rm-circle rm-circle-pink"><div class="rm-center-circle rm-center-circle-black"></div></div>
 						<div class="rm-line rm-line-bt"></div>
 					</div>
 					<div class="ass-pointer-flex">
@@ -348,80 +317,56 @@
 						</div>
 					</div>
 				</div>
-				<div class="rm-line-box">
-					<div class="rm-line-fix"></div>
-				</div>
+				<div class="rm-line-box"><div class="rm-line-fix"></div></div>
 				<div class="rm-cell">
 					<div class="rm-mark">
 						<div class="rm-line"></div>
-						<div class="rm-circle">
-							<div class="rm-center-circle"></div>
-						</div>
+						<div class="rm-circle"><div class="rm-center-circle"></div></div>
 						<div class="rm-line rm-line-bt"></div>
 					</div>
 					<div class="ass-info-title">First BIG Lottery</div>
 				</div>
-				<div class="rm-line-box">
-					<div class="rm-line-fix"></div>
-				</div>
+				<div class="rm-line-box"><div class="rm-line-fix"></div></div>
 				<div class="rm-cell">
 					<div class="rm-mark">
 						<div class="rm-line"></div>
-						<div class="rm-circle">
-							<div class="rm-center-circle"></div>
-						</div>
+						<div class="rm-circle"><div class="rm-center-circle"></div></div>
 						<div class="rm-line rm-line-bt"></div>
 					</div>
 					<div class="ass-info-title">June 2024 TGE</div>
 				</div>
-				<div class="rm-line-box">
-					<div class="rm-line-fix"></div>
-				</div>
+				<div class="rm-line-box"><div class="rm-line-fix"></div></div>
 				<div class="rm-cell">
 					<div class="rm-mark">
 						<div class="rm-line"></div>
-						<div class="rm-circle">
-							<div class="rm-center-circle"></div>
-						</div>
+						<div class="rm-circle"><div class="rm-center-circle"></div></div>
 						<div class="rm-line rm-line-bt"></div>
 					</div>
 					<div class="ass-info-title">Second HUGE Lottery</div>
 				</div>
-				<div class="rm-line-box">
-					<div class="rm-line-fix"></div>
-				</div>
+				<div class="rm-line-box"><div class="rm-line-fix"></div></div>
 				<div class="rm-cell">
 					<div class="rm-mark">
 						<div class="rm-line"></div>
-						<div class="rm-circle">
-							<div class="rm-center-circle"></div>
-						</div>
+						<div class="rm-circle"><div class="rm-center-circle"></div></div>
 						<div class="rm-line rm-line-bt"></div>
 					</div>
 					<div class="ass-info-title">Summer 2024 Listing on DeDust</div>
 				</div>
-				<div class="rm-line-box">
-					<div class="rm-line-fix"></div>
-				</div>
+				<div class="rm-line-box"><div class="rm-line-fix"></div></div>
 				<div class="rm-cell">
 					<div class="rm-mark">
 						<div class="rm-line"></div>
-						<div class="rm-circle">
-							<div class="rm-center-circle"></div>
-						</div>
+						<div class="rm-circle"><div class="rm-center-circle"></div></div>
 						<div class="rm-line rm-line-bt"></div>
 					</div>
 					<div class="ass-info-title">Fall 2024 Listing on popular CEX</div>
 				</div>
-				<div class="rm-line-box">
-					<div class="rm-line-fix"></div>
-				</div>
+				<div class="rm-line-box"><div class="rm-line-fix"></div></div>
 				<div class="rm-cell">
 					<div class="rm-mark rm-mark-gap-bt">
 						<div class="rm-line"></div>
-						<div class="rm-circle">
-							<div class="rm-center-circle"></div>
-						</div>
+						<div class="rm-circle"><div class="rm-center-circle"></div></div>
 					</div>
 					<div class="ass-info-title">4Q 2024 Live event for Top Holders</div>
 				</div>
@@ -431,59 +376,55 @@
 
 	<div class="footer">
 		<div class="footer-group">
-			<a class="social-link-box" href="https://t.me/pender_official" target="_blank"><img class="footer-icon"
-					alt="tg" src="images/telegram-white.svg"></a>
+			<a class="social-link-box" href="https://t.me/pender_official" target="_blank"><img class="footer-icon" alt="tg" src="images/telegram-white.svg"></a>
 			<img class="ticker-cube" alt="cube" src="images/cube.svg">
-			<a class="social-link-box" href="#buy-pendr"><img class="pender-white-logo" alt="logo-white"
-					src="images/logo-white.svg"></a>
+			<a class="social-link-box" href="#buy-pendr"><img class="pender-white-logo" alt="logo-white" src="images/logo-white.svg"></a>
 			<img class="ticker-cube" alt="cube" src="images/cube.svg">
-			<a class="social-link-box" href="https://twitter.com/pender_ton" target="_blank"><img class="footer-icon"
-					alt="x" src="images/twitter-white.svg"></a>
+			<a class="social-link-box" href="https://twitter.com/pender_ton" target="_blank"><img class="footer-icon" alt="x" src="images/twitter-white.svg"></a>
 		</div>
 		<div class="footer-text"><span>© 2024 by The Pender.</span> <span>all rights reserved.</span></div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
 	<script type="text/javascript">
 		document.addEventListener('DOMContentLoaded', function () {
-			var walletLinks = document.querySelectorAll('.ass-wallet-link');
-			walletLinks.forEach(function (walletLink) {
-				walletLink.addEventListener('click', function (event) {
-					event.preventDefault(); // Предотвращаем стандартное действие ссылки
-				});
-			});
+		    var walletLinks = document.querySelectorAll('.ass-wallet-link');
+		    walletLinks.forEach(function(walletLink) {
+		        walletLink.addEventListener('click', function(event) {
+		            event.preventDefault(); // Предотвращаем стандартное действие ссылки
+		        });
+		    });
 
-			var wallet = document.querySelector('.ass-wallet');
-			var clipboard = new ClipboardJS(wallet, {
-				text: function () {
-					//return document.querySelector('.ass-wallet-text').textContent;
-					return "PENDR Soon..."
-				}
-			});
+		    var wallet = document.querySelector('.ass-wallet');
+		    var clipboard = new ClipboardJS(wallet, {
+		        text: function() {
+		            return document.querySelector('.ass-wallet-text').textContent;
+		        }
+		    });
 
-			clipboard.on('success', function (e) {
-				var walletText = document.querySelector('.ass-wallet-text');
-				walletText.textContent = 'copied!';
-				var checkIcon = document.querySelector('.check-icon');
-				var copyIcon = document.querySelector('.copy-icon');
+		    clipboard.on('success', function (e) {
+		        var walletText = document.querySelector('.ass-wallet-text');
+		        walletText.textContent = 'copied!';
+		        var checkIcon = document.querySelector('.check-icon');
+		        var copyIcon = document.querySelector('.copy-icon');
+		        
+		        // Скрываем иконку copy-icon и показываем check-icon
+		        copyIcon.style.display = 'none';
+		        checkIcon.style.display = 'inline-block';
 
-				// Скрываем иконку copy-icon и показываем check-icon
-				copyIcon.style.display = 'none';
-				checkIcon.style.display = 'inline-block';
+		        setTimeout(function () {
+		            walletText.textContent = 'UQAJh1gh-nISo1dpFb7tPS-E7M1GwfBoBjakBgRGyUN1FyMy';
+		            // Показываем иконку copy-icon и скрываем check-icon
+		            copyIcon.style.display = 'inline-block';
+		            checkIcon.style.display = 'none';
+		        }, 2000);
+		        e.clearSelection();
+		        e.stopPropagation();
+		    });
 
-				setTimeout(function () {
-					walletText.textContent = 'UQAJh1gh-nISo1dpFb7tPS-E7M1GwfBoBjakBgRGyUN1FyMy';
-					// Показываем иконку copy-icon и скрываем check-icon
-					copyIcon.style.display = 'inline-block';
-					checkIcon.style.display = 'none';
-				}, 2000);
-				e.clearSelection();
-				e.stopPropagation();
-			});
-
-			clipboard.on('error', function (e) {
-				console.error('Action:', e.action);
-				console.error('Trigger:', e.trigger);
-			});
+		    clipboard.on('error', function (e) {
+		        console.error('Action:', e.action);
+		        console.error('Trigger:', e.trigger);
+		    });
 		});
 	</script>
 	<script type="text/javascript" src="js/ticker.js"></script>
@@ -491,13 +432,31 @@
 	<script type="text/javascript" src="js/digits.js"></script>
 	<script type="text/javascript" src="js/timer.js"></script>
 	<script>
-		window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+	  window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
 	</script>
 	<script defer src="/_vercel/speed-insights/script.js"></script>
 	<script>
-		window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+	  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 	</script>
 	<script defer src="/_vercel/insights/script.js"></script>
-</body>
+	<script src="https://unpkg.com/@rive-app/canvas@2.10.3"></script>
+	<script>
+	  const setupRiveAnimation = (canvasId, animationFile) => {
+	    const canvas = document.getElementById(canvasId);
+	    return new rive.Rive({
+	      src: animationFile,
+	      canvas: canvas,
+	      autoplay: true,
+	      layout: new rive.Layout({
+	        fit: rive.Fit.Fill,
+	        alignment: rive.Alignment.Center
+	      })
+	    });
+	  };
 
+	  const animation1 = setupRiveAnimation('fucker-pender', 'https://thepender.com/images/fucker-pender.riv');
+	  const animation2 = setupRiveAnimation('ass-pender', 'https://thepender.com/images/ass-pender.riv');
+	  const animation3 = setupRiveAnimation('money-pender', 'https://thepender.com/images/money-pender.riv');
+	</script>
+</body>
 </html>
