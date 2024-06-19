@@ -1,6 +1,8 @@
 export default (req, res) => {
   const languageHeader = req.headers["accept-language"];
   console.log("Received Language Header:", languageHeader);
+  console.log("Preferred Language:", preferredLanguage);
+  console.log("Current URL:", req.url);
 
   // Парсим заголовок и ищем язык с наивысшим приоритетом
   const preferredLanguage = languageHeader
