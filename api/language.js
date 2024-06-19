@@ -1,7 +1,6 @@
 export default (req, res) => {
   const language = req.headers["accept-language"];
-  console.log("Accept-Language:", language); // Добавьте эту строку для логирования
-
+  console.log("Language Header:", language); // Для логирования заголовка
   if (language && language.includes("ru")) {
     res.writeHead(302, { Location: "/ru" });
   } else {
@@ -9,3 +8,4 @@ export default (req, res) => {
   }
   res.end();
 };
+пше;

@@ -7,7 +7,8 @@
     },
     {
       "src": "/",
-      "dest": "/api/language"
+      "dest": "/api/language",
+      "continue": true
     }
   ]
 }
