@@ -2,12 +2,12 @@
   "version": 2,
   "routes": [
     {
-      "src": "/ru",
-      "dest": "/index-ru.html"
-    },
-    {
       "src": "/",
       "dest": "/api/language"
+    },
+    {
+      "src": "/ru",
+      "dest": "/index-ru.html"
     }
   ]
 }

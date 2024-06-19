@@ -1,9 +1,18 @@
 export default (req, res) => {
-  const language = req.headers["accept-language"];
-  console.log("Language Header:", language);
-  if (language && language.includes("ru")) {
+  const languageHeader = req.headers["accept-language"];
+  console.log("Received Language Header:", languageHeader);
+
+  // Парсим заголовок и ищем язык с наивысшим приоритетом
+  const preferredLanguage = languageHeader
+    .split(",")
+    .map((lang) => lang.split(";")[0].trim()) // Убираем качественный фактор, если он есть
+    .find((lang) => lang.includes("en") || lang.includes("ru")); // Ищем английский или русский
+
+  if (preferredLanguage && preferredLanguage.includes("ru")) {
+    console.log("Redirecting to Russian version");
     res.writeHead(302, { Location: "/ru" });
   } else {
+    console.log("Redirecting to English version");
     res.writeHead(302, { Location: "/" });
   }
   res.end();
