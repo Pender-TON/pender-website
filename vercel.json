@@ -3,7 +3,8 @@
   "routes": [
     {
       "src": "/ru",
-      "dest": "/index-ru.html"
+      "dest": "/index-ru.html",
+      "status": 200
     },
     {
       "src": "/",
