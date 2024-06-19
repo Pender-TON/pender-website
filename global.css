@@ -1,34 +1,58 @@
 body {
     margin: 0;
     line-height: normal;
-    -webkit-font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased;
 }
 
 @font-face {
-    font-family: 'Galano Grotesque Bold';
-    src: url('fonts/GalanoGrotesqueBold.otf') format('opentype')
+    font-family: "Galano-Grotesque-Bold";
+    src: url("fonts/GalanoGrotesqueBold.otf") format("opentype");
 }
 
 @font-face {
-    font-family: 'Galano Grotesque SemiBold';
-    src: url('fonts/GalanoGrotesqueSemiBold.otf') format('opentype')
+    font-family: "Proxima-Nova-Bold";
+    src: url("fonts/ProximaNova-Extrabld.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Galano Grotesque SemiBoldItalic';
-    src: url('fonts/GalanoGrotesqueSemiBoldItalic.otf') format('opentype')
+    font-family: "Galano-Grotesque-SemiBold";
+    src: url("fonts/GalanoGrotesqueSemiBold.otf") format("opentype");
 }
 
 @font-face {
-    font-family: 'Galano Grotesque Heavy';
-    src: url('fonts/GalanoGrotesqueHeavy.otf') format('opentype')
+    font-family: "Proxima-Nova-SemiBold";
+    src: url("fonts/ProximaNova-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Galano-Grotesque-SemiBoldItalic";
+    src: url("fonts/GalanoGrotesqueSemiBoldItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Proxima-Nova-SemiBoldItalic";
+    src: url("fonts/ProximaNova-BoldIt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Galano-Grotesque-Heavy";
+    src: url("fonts/GalanoGrotesqueHeavy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Proxima-Nova-Heavy";
+    src: url("fonts/ProximaNova-Black.ttf") format("truetype");
 }
 
 :root {
-    --font-gg-bold: 'Galano Grotesque Bold', sans-serif;
-    --font-gg-semibold: 'Galano Grotesque SemiBold', sans-serif;
-    --font-gg-semibolditalic: 'Galano Grotesque SemiBoldItalic', sans-serif;
-    --font-gg-heavy: 'Galano Grotesque Heavy', sans-serif;
+    --font-gg-bold: "Galano-Grotesque-Bold";
+    --font-gg-semibold: "Galano-Grotesque-SemiBold";
+    --font-gg-semibolditalic: "Galano-Grotesque-SemiBoldItalic";
+    --font-gg-heavy: "Galano-Grotesque-Heavy";
+    --font-pn-bold: "Proxima-Nova-Bold";
+    --font-pn-semibold: "Proxima-Nova-SemiBold";
+    --font-pn-semibolditalic: "Proxima-Nova-SemiBoldItalic";
+    --font-pn-heavy: "Proxima-Nova-Heavy";
     --font-size-xl: 116px;
     --font-size-xl-m: 36px;
     --font-size-l: 80px;
@@ -45,7 +69,11 @@ body {
     --pink: rgb(254 91 170 / 100%);
     --pink-pink-t-20: rgb(254 91 170 / 20%);
     --pink-pink-t-30: rgb(254 91 170 / 30%);
-    --pink-gradient: linear-gradient(107.74deg, rgb(255 139 195 / 100%), rgb(253 84 166 / 100%));
+    --pink-gradient: linear-gradient(
+        107.74deg,
+        rgb(255 139 195 / 100%),
+        rgb(253 84 166 / 100%)
+    );
     --disable-gray-l: rgb(174 174 174 / 100%);
     --disable-gray-m: rgb(190 190 190 / 100%);
     --disable-gray-s: rgb(224 224 224 / 100%);
@@ -54,6 +82,7 @@ body {
     --gap-l: 48px;
     --gap-sm: 24px;
     --gap-s: 20px;
+    --gap-2xxs: 16px;
     --gap-xs: 12px;
     --gap-xxs: 8px;
     --padding-xxxl: 164px;
@@ -71,5 +100,5 @@ body {
     --br-l: 48px;
     --br-m: 36px;
     --br-m-m: 32px;
-    --br-s: 20px
+    --br-s: 20px;
 }
